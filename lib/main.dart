@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        appBar: AppBar(title: const Text("Practice file")),
+        appBar: AppBar(title: const Text("BMQAS Flutter Training Team\n3 of 4 in call")),
         body: Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -23,13 +23,13 @@ class MyApp extends StatelessWidget {
                 children: [
                   CustomCenteredCircleContainer(
                     parentWidth: 600,
-                    parentHeight: 240,
-                    parentColor: Colors.red,
+                    parentHeight: 500,
+                    parentColor: Colors.grey.shade300,
                     circleWidth: 120,
                     circleHeight: 120,
-                    circleColor: Colors.blue,
+                    text: "MIEK",
                     borderColor: Colors.black,
-                    borderWidth: 3,
+                    borderWidth: 3, textStyle: TextStyle(fontSize: 14, color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                   CustomPositionedContainer(
                     width: 200,
@@ -46,12 +46,12 @@ class MyApp extends StatelessWidget {
                       CustomCenteredCircleContainer(
                         parentWidth: 600,
                         parentHeight: 240,
-                        parentColor: Colors.red,
+                        parentColor: Colors.grey.shade300,
                         circleWidth: 120,
                         circleHeight: 120,
-                        circleColor: Colors.blue,
+                        text: "AB",
                         borderColor: Colors.black,
-                        borderWidth: 3,
+                        borderWidth: 3, textStyle: TextStyle(fontSize: 14, color: Colors.white, fontWeight: FontWeight.bold),
                       ),
                       CustomPositionedContainer(
                         width: 120,
@@ -61,15 +61,16 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                   Stack(
+                    children: [
                       CustomCenteredCircleContainer(
                         parentWidth: 600,
                         parentHeight: 240,
-                        parentColor: Colors.red,
+                        parentColor: Colors.grey.shade300,
                         circleWidth: 120,
                         circleHeight: 120,
-                        circleColor: Colors.blue,
+                        text: "NI",
                         borderColor: Colors.black,
-                        borderWidth: 3,
+                        borderWidth: 3, textStyle: TextStyle(fontSize: 14, color: Colors.white, fontWeight: FontWeight.bold),
                       ),
                       CustomPositionedContainer(
                         width: 40,
