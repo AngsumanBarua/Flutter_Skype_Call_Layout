@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'Widgets/wid1.dart';
+import 'Widgets/wid2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,42 +21,21 @@ class MyApp extends StatelessWidget {
             children: [
               Stack(
                 children: [
-                  Container(
-                    width: 600,
-                    height: 500,
-                    color: Colors.red,
-                    child: Center(
-                        child: Container(
-                          width:120,
-                          height: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.blue, // Fill color
-                            shape: BoxShape.circle, // Makes the shape circular
-                            border: Border.all(
-                              color: Colors.black, // Border color
-                              width: 3, // Border width
-                            ),
-                          ),
-                        )
-                    ),
+                  CustomCenteredCircleContainer(
+                    parentWidth: 600,
+                    parentHeight: 240,
+                    parentColor: Colors.red,
+                    circleWidth: 120,
+                    circleHeight: 120,
+                    circleColor: Colors.blue,
+                    borderColor: Colors.black,
+                    borderWidth: 3,
                   ),
-                  Positioned(
-                    bottom: 20,
-                    left:20,
-                    child: Container(
-                      width: 200,
-                      height: 30,
-                      decoration: BoxDecoration(
-                        // color: Colors.black,
-                        border: Border.all(
-                          color: Colors.blue,
-                          width: 2,
-                        ),
-                        // borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text("Mir Injamamul Ibne Kashem"),
-                    )
-                  ),
+                  CustomPositionedContainer(
+                    width: 200,
+                    height:30,
+                    text: "Mir Injamamul Ibne Kashem",
+                  )
                 ],
               ),
               Column(
@@ -62,81 +43,38 @@ class MyApp extends StatelessWidget {
                 children: [
                   Stack(
                     children: [
-                      Container(
-                        width: 600,
-                        height: 240,
-                        color: Colors.red,
-                        child: Center(
-                            child: Container(
-                              width:120,
-                              height: 120,
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
-                                shape: BoxShape.circle,
-                                border: Border.all(
-                                  color: Colors.black, // Border color
-                                  width: 3, // Border width
-                                ),
-                              ),
-                            )
-                        ),
+                      CustomCenteredCircleContainer(
+                        parentWidth: 600,
+                        parentHeight: 240,
+                        parentColor: Colors.red,
+                        circleWidth: 120,
+                        circleHeight: 120,
+                        circleColor: Colors.blue,
+                        borderColor: Colors.black,
+                        borderWidth: 3,
                       ),
-                      Positioned(
-                          bottom: 20,
-                          left:20,
-                          child: Container(
-                            width: 120,
-                            height: 30,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              border: Border.all(
-                                color: Colors.blue,
-                                width: 2,
-                              ),
-                              // borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Text("Angsuman Barua"),
-                          )
+                      CustomPositionedContainer(
+                        width: 120,
+                        height:30,
+                        text: "Angsuman Barua",
                       ),
                     ],
                   ),
                   Stack(
-                    children: [
-                      Container(
-                        width: 600,
-                        height: 240,
-                        color: Colors.red,
-                        child: Center(
-                            child: Container(
-                              width:120,
-                              height: 120,
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
-                                shape: BoxShape.circle,
-                                border: Border.all(
-                                  color: Colors.black,
-                                  width: 3,
-                                ),
-                              ),
-                            )
-                        ),
+                      CustomCenteredCircleContainer(
+                        parentWidth: 600,
+                        parentHeight: 240,
+                        parentColor: Colors.red,
+                        circleWidth: 120,
+                        circleHeight: 120,
+                        circleColor: Colors.blue,
+                        borderColor: Colors.black,
+                        borderWidth: 3,
                       ),
-                      Positioned(
-                          bottom: 20,
-                          left:20,
-                          child: Container(
-                            width: 40,
-                            height: 30,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              border: Border.all(
-                                color: Colors.blue,
-                                width: 2,
-                              ),
-                              // borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Text("Niaz"),
-                          )
+                      CustomPositionedContainer(
+                        width: 40,
+                        height: 30,
+                        text: "Niaz",
                       ),
                     ],
                   )
