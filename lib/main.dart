@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      //size = MediaQuery.of(context).size;
       home: Scaffold(
         appBar: AppBar(title: const Text("BMQAS Flutter Training Team\n3 of 4 in call")),
         body: Center(
@@ -22,8 +23,8 @@ class MyApp extends StatelessWidget {
               Stack(
                 children: [
                   CustomCenteredCircleContainer(
-                    parentWidth: 600,
-                    parentHeight: 500,
+                    parentWidth: MediaQuery.of(context).size.width * 0.45,
+                    parentHeight: MediaQuery.of(context).size.height * 0.88,
                     parentColor: Colors.grey.shade300,
                     circleWidth: 120,
                     circleHeight: 120,
@@ -44,8 +45,8 @@ class MyApp extends StatelessWidget {
                   Stack(
                     children: [
                       CustomCenteredCircleContainer(
-                        parentWidth: 600,
-                        parentHeight: 240,
+                        parentWidth: MediaQuery.of(context).size.width * 0.45,
+                        parentHeight: MediaQuery.of(context).size.height * 0.44,
                         parentColor: Colors.grey.shade300,
                         circleWidth: 120,
                         circleHeight: 120,
@@ -63,8 +64,8 @@ class MyApp extends StatelessWidget {
                   Stack(
                     children: [
                       CustomCenteredCircleContainer(
-                        parentWidth: 600,
-                        parentHeight: 240,
+                        parentWidth: MediaQuery.of(context).size.width * 0.45,
+                        parentHeight: MediaQuery.of(context).size.height * 0.44,
                         parentColor: Colors.grey.shade300,
                         circleWidth: 120,
                         circleHeight: 120,
